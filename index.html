@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <title>@jazz_dawg</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      background: #000;
+      font-family: "Chewy", Arial, sans-serif;
+    }
+
+    .flag {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .handle {
+      position: fixed;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      z-index: 1;
+      color: #fff;
+      text-decoration: none;
+      font-size: clamp(2.25rem, 11vw, 6.5rem);
+      line-height: 1;
+      letter-spacing: 0.005em;
+      -webkit-text-stroke: 10px #000;
+              text-stroke: 10px #000;
+      paint-order: stroke fill;
+      text-shadow:
+        -3px -3px 0 #000,  0 -3px 0 #000,  3px -3px 0 #000,
+        -3px  0   0 #000,                  3px  0   0 #000,
+        -3px  3px 0 #000,  0  3px 0 #000,  3px  3px 0 #000;
+      user-select: all;
+      transition: transform 120ms ease-out;
+    }
+
+    .handle:hover, .handle:focus-visible {
+      transform: scale(1.02);
+      outline: none;
+    }
+
+    @media (max-width: 600px) {
+      .handle {
+        -webkit-text-stroke-width: 7px;
+        text-stroke-width: 7px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--
+    Puppy Pride Flag by Pup Flip Gray, via Wikimedia Commons, CC0
+    https://commons.wikimedia.org/wiki/File:Puppy_Play_Pride_Flag.svg
+  -->
+  <img class="flag" src="Puppy_Play_Pride_Flag.svg" alt="Puppy Pride Flag">
+
+  <a class="handle" href="https://t.me/jazz_dawg" rel="noopener">@jazz_dawg</a>
+
+</body>
+</html>
